@@ -18,41 +18,11 @@ var pixSize = 4;
 var img = new Image();//图片对象初始化
 img.src = "k1.png";
 
-
-// var changeColorR = 1;
-// var changeColorG = 100;
-// var changeColorB = 100;
-// var changeColorCnt = 0;
-// pixImgX = (canvas.width / 2)-150;
-// pixImgY = (canvas.height / 2)-150;
-
 pixImgX = 0;
 pixImgY = 0;
 
 var clickCnt = 0;
-// alert("kkk");
-//图片加载完成后获取图片信息
 
-// window.onclick = function(){
-// 	var changeC = setInterval(changeColor,2);
-// }
-
-// function changeColor(){
-// 	if (changeColorCnt == 0) { 
-// 		changeColorR++;
-// 		if(changeColorR == 255){
-// 			changeColorCnt = 1;
-// 		} 
-// 	}
-// 	if (changeColorCnt == 1) {
-// 		changeColorR--;
-// 		if(changeColorR == 0){
-// 			window.clearInterval(changeC);
-// 		}
-// 	}
-// 	document.body.style.backgroundColor = "rgb("+changeColorR+","
-// 		+changeColorG+","+changeColorB+")";
-// }
 window.onload = function(){
 	ctx.textAlign = "center";
 	ctx.textBaseline = "middle";
@@ -183,30 +153,3 @@ function stop(p){
 		p.stop = true;
 	}
 }
-	// var newX = 50,newY = 50,downOrUp,oldX,oldY;
-
-	// document.onmousedown =  function(de){
-	// 	if((de.clientX - newX) <= 200 &&
-	// 		(de.clientX - newX) >= 0 &&
-	// 		(de.clientY - newY) >= 0 &&
-	// 		(de.clientY - newY) <=200){
-	// 		downOrUp = 1;
-	// 		oldX = de.clientX;
-	// 		oldY = de.clientY;
-
-	// 	}
-	// }
-	// document.onmousemove = function(me){
-	// 	if (downOrUp == 1){	
-			
-	// 		newX += (me.clientX - oldX);
-	// 		newY += (me.clientY - oldY);
-	// 		ctx.clearRect(0,0,window.innerWidth,window.innerHeight);
-	// 		image = ctx.putImageData(imgData,newX,newY);
-	// 		oldX = me.clientX;
-	// 		oldY = me.clientY;
-	// 	}
-	// }
-	// document.onmouseup = function(ue){
-	// 	downOrUp = 0;
-	// }
